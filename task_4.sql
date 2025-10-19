@@ -8,7 +8,8 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = 'alx_book_store'  -- Replace with your database name if different
+    TABLE_SCHEMA = 'alx_book_store'  
+   TABLE_NAME = 'Books'
     AND TABLE_NAME = 'books'
 ORDER BY 
     ORDINAL_POSITION;
